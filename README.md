@@ -79,7 +79,7 @@ Clone o repositório:
 
 ```bash
 git clone https://github.com/seu-usuario/reconhecimento-borboletas.git
-cd ButterflyROI
+cd reconhecimento-borboletas
 ```
 
 Crie um ambiente virtual:
