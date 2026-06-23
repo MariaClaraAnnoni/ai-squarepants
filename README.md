@@ -46,44 +46,23 @@ O dataset será utilizado para experimentação e validação das técnicas de s
 ## Estrutura do Projeto
 
 ```text
-ButterflyROI/
+reconhecimento-borboletas/
 │
 ├── data/
-│   ├── raw/
-│   ├── processed/
 │   └── butterfly_dataset/
 │
 ├── notebooks/
-│   ├── dataset_analysis.ipynb
-│   ├── preprocessing.ipynb
 │   └── segmentation.ipynb
 │
 ├── src/
-│   ├── preprocessing/
-│   │   ├── filters.py
-│   │   └── enhancement.py
-│   │
-│   ├── segmentation/
-│   │   ├── otsu.py
-│   │   ├── morphology.py
-│   │   └── roi_extraction.py
-│   │
-│   ├── evaluation/
-│   │   ├── metrics.py
-│   │   ├── iou.py
-│   │   └── dice.py
-│   │
-│   ├── visualization/
-│   │   ├── overlay.py
-│   │   └── plots.py
-│   │
+│   ├── preprocessing.py
+│   ├── segmentation.py
+│   ├── visualization.py
 │   └── utils.py
 │
 ├── outputs/
 │   ├── masks/
-│   ├── overlays/
-│   ├── reports/
-│   └── figures/
+│   └── overlays/
 │
 ├── interface/
 │   └── app.py
@@ -99,7 +78,7 @@ ButterflyROI/
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/ButterflyROI.git
+git clone https://github.com/seu-usuario/reconhecimento-borboletas.git
 cd ButterflyROI
 ```
 
@@ -231,17 +210,6 @@ Resultado esperado:
 * Imagem Original;
 * Máscara Binária;
 * Sobreposição da Máscara (Overlay).
-
-### 5. Avaliação
-
-A qualidade da segmentação será analisada utilizando métricas quantitativas.
-
-Métricas previstas:
-
-* Intersection over Union (IoU);
-* Dice Score;
-* Precisão da segmentação;
-* Comparação visual dos resultados.
 
 ## Execução
 
